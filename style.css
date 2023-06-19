@@ -29,7 +29,7 @@ h1{
     border-radius: 5px;
 }
 #numbers{
-    flex: 1;
+    flex: 1 1 auto;
     width: 90%;
     margin: 0 auto;
     margin-top: 10%;
@@ -40,13 +40,16 @@ h1{
 }
 .numbersRow{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 .button{
     background-color: rgb(145, 187, 154);
-    flex: 1 2 0;
-    width: 100%;
+    box-sizing: border-box;
+    width: clamp(8px, 10%, 200px);
     height: 100%;
+    flex: 1 1 auto;
     font-size: 32px;
     border-radius: 5px;
     padding: 10px;
